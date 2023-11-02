@@ -6,7 +6,7 @@
 /*   By: gd-innoc <gd-innoc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 18:25:20 by gd-innoc          #+#    #+#             */
-/*   Updated: 2023/11/02 14:22:25 by gd-innoc         ###   ########.fr       */
+/*   Updated: 2023/11/02 15:21:40 by gd-innoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -136,6 +136,7 @@ void ft_draw_map(t_data *data);
 int ft_map_alloc(char **argv, t_data *data);
 void ft_put_images(t_data *data, int new_x, int new_y);
 void ft_put_background(t_data *data);
+int	ft_check_char(int x, int y, t_data *data);
 // play.c
 int ft_set_y(char direction, int new_y);
 int ft_set_x(char direction, int new_x);
