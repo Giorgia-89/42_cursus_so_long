@@ -6,7 +6,7 @@
 /*   By: gd-innoc <gd-innoc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 10:23:17 by gd-innoc          #+#    #+#             */
-/*   Updated: 2023/11/01 16:17:10 by gd-innoc         ###   ########.fr       */
+/*   Updated: 2023/11/02 16:37:29 by gd-innoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	check_path_map(t_check *check, int x, int y)
 		free_check_map(check);
 		return (1);
 	}
-	if (check->map[y][x] == 'E')
+	if (check->map[y][x] == 'E' || check->map[y][x] == 'X')
 	{
 		if (check->map[y - 1][x] != 'P' && check->map[y][x - 1] != 'P' \
 		&& check->map[y + 1][x] != 'P' && check->map[y][x + 1] != 'P')
