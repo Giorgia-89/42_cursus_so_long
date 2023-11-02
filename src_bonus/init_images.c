@@ -6,7 +6,7 @@
 /*   By: gd-innoc <gd-innoc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 16:15:15 by gd-innoc          #+#    #+#             */
-/*   Updated: 2023/11/02 16:24:19 by gd-innoc         ###   ########.fr       */
+/*   Updated: 2023/11/02 16:40:48 by gd-innoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,3 @@ void	check_images(t_data *data)
 	if (data->img.enemy == NULL)
 		ft_print_error(data, 8);
 }
-
-

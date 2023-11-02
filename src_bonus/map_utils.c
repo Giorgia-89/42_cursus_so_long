@@ -6,7 +6,7 @@
 /*   By: gd-innoc <gd-innoc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 14:58:22 by gd-innoc          #+#    #+#             */
-/*   Updated: 2023/11/02 16:33:51 by gd-innoc         ###   ########.fr       */
+/*   Updated: 2023/11/02 16:40:32 by gd-innoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,4 +74,3 @@ int	ft_check_char(int x, int y, t_data *data)
 		data->map.collectible++;
 	return (0);
 }
-
