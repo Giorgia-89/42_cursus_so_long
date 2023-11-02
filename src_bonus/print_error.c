@@ -6,7 +6,7 @@
 /*   By: gd-innoc <gd-innoc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 11:34:28 by gd-innoc          #+#    #+#             */
-/*   Updated: 2023/11/01 16:30:05 by gd-innoc         ###   ########.fr       */
+/*   Updated: 2023/11/02 16:24:17 by gd-innoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ void	ft_print_error(t_data *data, int code)
 			ft_printf("Error\nFailed to load exit image\n");
 		else if (code == 5)
 			ft_printf("Error\nFailed to load collectible image\n");
-		else if (code == 6)
-			ft_printf("Error\nFailed to allocate memory for map\n");
+		else if (code == 8)
+			ft_printf("Error\nFailed to load enemy image\n");
 		else if (code == 7)
 			ft_printf("Error\nProgram init failed\n");
 		ft_free_memory(data);

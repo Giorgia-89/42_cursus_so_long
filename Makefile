@@ -6,19 +6,19 @@
 #    By: gd-innoc <gd-innoc@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/19 11:27:53 by gd-innoc          #+#    #+#              #
-#    Updated: 2023/11/01 16:24:47 by gd-innoc         ###   ########.fr        #
+#    Updated: 2023/11/02 16:18:18 by gd-innoc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = so_long
 NAME_BONUS = so_long_bonus
 SRC = src/so_long src/map src/checks src/count src/check_map src/free_memory \
-		src/play src/draw_count src/print_error src/check_path src/map_utils \
-		src/check_path_utils src/get_next_line src/get_next_line_utils
+	src/play src/draw_count src/print_error src/check_path src/map_utils \
+	src/check_path_utils src/get_next_line src/get_next_line_utils
 SRC_BONUS = src_bonus/so_long src_bonus/map src_bonus/checks src_bonus/count \
-		src_bonus/check_map src_bonus/free_memory src/map_utils\
-		src_bonus/play src_bonus/draw_count src_bonus/print_error src_bonus/check_path \
-		src_bonus/check_path_utils src_bonus/get_next_line src_bonus/get_next_line_utils
+	src_bonus/check_map src_bonus/free_memory src_bonus/map_utils src_bonus/init_images\
+	src_bonus/play src_bonus/draw_count src_bonus/print_error src_bonus/check_path \
+	src_bonus/check_path_utils src_bonus/get_next_line src_bonus/get_next_line_utils
 
 CC = cc
 CFLAGS = -Wall -Werror -Wextra -g

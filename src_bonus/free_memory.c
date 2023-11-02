@@ -6,7 +6,7 @@
 /*   By: gd-innoc <gd-innoc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/27 11:53:34 by gd-innoc          #+#    #+#             */
-/*   Updated: 2023/11/01 16:33:16 by gd-innoc         ###   ########.fr       */
+/*   Updated: 2023/11/02 16:30:13 by gd-innoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ void	ft_free_memory(t_data *data)
 	mlx_destroy_image(data->mlx, data->img.plyr);
 	mlx_destroy_image(data->mlx, data->img.collectible);
 	mlx_destroy_image(data->mlx, data->img.exit);
+	mlx_destroy_image(data->mlx, data->img.enemy);
 	ft_free_map(data);
 	mlx_destroy_window(data->mlx, data->win);
 	mlx_destroy_display(data->mlx);

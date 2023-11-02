@@ -6,7 +6,7 @@
 /*   By: gd-innoc <gd-innoc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 10:48:29 by gd-innoc          #+#    #+#             */
-/*   Updated: 2023/11/01 16:33:54 by gd-innoc         ###   ########.fr       */
+/*   Updated: 2023/11/02 16:25:59 by gd-innoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,6 +96,8 @@ void	ft_draw_map(t_data *data)
 			ft_put_object(data, data->img.collectible);
 		else if (data->map.map[data->map.y][data->map.x] == 'E')
 			ft_put_object(data, data->img.exit);
+		else if (data->map.map[data->map.y][data->map.x] == 'X')
+			ft_put_object(data, data->img.enemy);
 		if (data->map.x < (data->width / IMG_SIZE))
 			data->map.x++;
 		else

@@ -6,7 +6,7 @@
 /*   By: gd-innoc <gd-innoc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 18:25:20 by gd-innoc          #+#    #+#             */
-/*   Updated: 2023/11/02 15:26:57 by gd-innoc         ###   ########.fr       */
+/*   Updated: 2023/11/02 16:20:58 by gd-innoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,7 @@ typedef struct s_img
 	void	*background;
 	void	*wall;
 	void	*exit;
+	void	*enemy;
 }	t_img;
 
 /* structure to handle data*/
@@ -112,6 +113,9 @@ void	check_dim(int width, int height, int fd);
 int		ft_linelen(int fd);
 int		ft_countlines(int fd);
 int		ft_count_requisites(t_data *data, int plyr, int exit);
+// init_images
+void	set_images(t_data *data);
+void	check_images(t_data *data);
 // draw count
 void	ft_draw_count(t_data *data);
 // free_memory.c
@@ -146,11 +150,8 @@ int		ft_actions(int keycode, t_data *data);
 // print_error
 void	ft_print_error(t_data *data, int code);
 // so_long.c
-void	set_images(t_data *data);
 int		ft_close(t_data *data);
 int		ft_render_next_frame(t_data *data);
 t_data	*data(void);
-// free map
-void	ft_free_map(t_data *data);
 
 #endif
