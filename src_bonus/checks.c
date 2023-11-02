@@ -6,7 +6,7 @@
 /*   By: gd-innoc <gd-innoc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 12:02:03 by gd-innoc          #+#    #+#             */
-/*   Updated: 2023/11/01 16:19:23 by gd-innoc         ###   ########.fr       */
+/*   Updated: 2023/11/02 16:48:32 by gd-innoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_check_args(int argc)
 {
 	if (argc != 2)
 	{
-		ft_printf("Error: usage must be './so_long maps/mapname.ber'\n");
+		ft_printf("Error\nUsage must be './so_long maps/mapname.ber'\n");
 		exit(EXIT_FAILURE);
 	}
 }
@@ -27,7 +27,8 @@ void	ft_check_fd(int fd)
 {
 	if (fd == -1)
 	{
-		ft_printf("Error opening file\n");
+		ft_printf("Error\nSomething went wrong when opening the file. ");
+		ft_printf("Does the file exist?\n");
 		exit(EXIT_FAILURE);
 	}
 	return ;
@@ -36,11 +37,10 @@ void	ft_check_fd(int fd)
 /*this function counts and compares the length of each row*/
 void	compare_length(int len, int next_len, int fd)
 {
-	ft_printf("len is %d\nNext len is %d", len, next_len);
 	if (len != next_len)
 	{
 		close(fd);
-		ft_printf("Error\nMap is not rectangular\n");
+		ft_printf("Error\nAll rows must have equal lengths.\n");
 		exit(EXIT_FAILURE);
 	}
 }
@@ -75,13 +75,13 @@ void	check_dim(int width, int height, int fd)
 	if (width == 0 || height == 0)
 	{
 		close(fd);
-		ft_printf("Error\nMap cannot be empty\n");
+		ft_printf("Error\nMap cannot have blank rows\n");
 		exit(EXIT_FAILURE);
 	}
 	else if (width < 3 || height < 3)
 	{
 		close(fd);
-		ft_printf("Error\nMap too small\n");
+		ft_printf("Error\nInvalid map\n");
 		exit(EXIT_FAILURE);
 	}
 }

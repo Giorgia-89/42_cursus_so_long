@@ -6,7 +6,7 @@
 /*   By: gd-innoc <gd-innoc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 12:02:03 by gd-innoc          #+#    #+#             */
-/*   Updated: 2023/11/01 14:54:24 by gd-innoc         ###   ########.fr       */
+/*   Updated: 2023/11/02 16:45:22 by gd-innoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ void	ft_check_fd(int fd)
 {
 	if (fd == -1)
 	{
-		ft_printf("Error opening file\n");
+		ft_printf("Error\n Something went wrong when opening the file. ");
+		ft_printf("Does the file exist?\n");
 		exit(EXIT_FAILURE);
 	}
 	return ;
