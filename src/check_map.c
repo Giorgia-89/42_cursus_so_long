@@ -6,7 +6,7 @@
 /*   By: gd-innoc <gd-innoc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 16:22:33 by gd-innoc          #+#    #+#             */
-/*   Updated: 2023/11/02 15:07:39 by gd-innoc         ###   ########.fr       */
+/*   Updated: 2023/11/02 15:15:45 by gd-innoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,8 +88,6 @@ int	ft_check_contents(t_data *data)
 				ft_printf("Error\nMap contains invalid characters\n");
 				return (-1);
 			}
-			else if (data->map.map[y][x] == 'C')
-				data->map.collectible++;
 			y++;
 		}
 		x++;

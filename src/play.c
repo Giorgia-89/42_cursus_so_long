@@ -6,7 +6,7 @@
 /*   By: gd-innoc <gd-innoc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 14:23:15 by gd-innoc          #+#    #+#             */
-/*   Updated: 2023/11/01 16:13:07 by gd-innoc         ###   ########.fr       */
+/*   Updated: 2023/11/02 15:17:13 by gd-innoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	ft_check_collected(t_data *data)
 	}
 	else
 	{
-		ft_printf("You need to collect all the collectibles ");
+		ft_printf("You need to eat all the mushrooms ");
 		ft_printf("before you can exit the game!\n");
 	}
 }
