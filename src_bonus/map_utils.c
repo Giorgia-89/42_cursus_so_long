@@ -6,7 +6,7 @@
 /*   By: gd-innoc <gd-innoc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 14:58:22 by gd-innoc          #+#    #+#             */
-/*   Updated: 2023/11/02 16:14:52 by gd-innoc         ###   ########.fr       */
+/*   Updated: 2023/11/02 16:33:51 by gd-innoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,8 @@ void	ft_put_images(t_data *data, int new_x, int new_y)
 		data->map.map[new_y][new_x] = '0';
 		data->collected++;
 	}
+	else if (data->map.map[new_y][new_x] == 'X')
+		ft_print_error(data, 9);
 	data->counter++;
 }
 

@@ -6,7 +6,7 @@
 /*   By: gd-innoc <gd-innoc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 11:34:28 by gd-innoc          #+#    #+#             */
-/*   Updated: 2023/11/02 16:24:17 by gd-innoc         ###   ########.fr       */
+/*   Updated: 2023/11/02 16:34:41 by gd-innoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ void	ft_print_error(t_data *data, int code)
 			ft_printf("Error\nFailed to load enemy image\n");
 		else if (code == 7)
 			ft_printf("Error\nProgram init failed\n");
+		else if (code == 9)
+			ft_printf("You lose!\n");
 		ft_free_memory(data);
 	}
 	exit(EXIT_FAILURE);
